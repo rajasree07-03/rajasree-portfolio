@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio | John Doe</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- ====== NAVBAR ====== -->
+  <nav class="navbar">
+    <a href="#hero" class="logo">&lt;JD /&gt;</a>
+    <ul class="nav-links">
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+    </ul>
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+      <i class="fa-solid fa-moon"></i>
+    </button>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- ====== HERO ====== -->
+  <section class="hero" id="hero">
+    <div class="hero-container">
+      <div class="hero-text fade-in-up">
+        <p class="greeting">Hello, I'm</p>
+        <h1>John Doe</h1>
+        <p class="role">
+          <span class="typed" id="typed"></span>
+          <span class="cursor">|</span>
+        </p>
+        <a href="#projects" class="btn primary-btn">View My Work</a>
+        <a href="#about" class="btn secondary-btn">Learn More</a>
+      </div>
+      <div class="hero-image fade-in-up delay-1">
+        <div class="image-wrapper">
+          <img src="./dp.jpg" alt="Profile Picture">
+          <div class="blob-bg"></div>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <div class="mouse">
+        <div class="wheel"></div>
+      </div>
+      <p>Scroll Down</p>
+    </div>
+  </section>
+
+  <!-- ====== ABOUT ====== -->
+  <section class="about section" id="about">
+    <div class="container">
+      <h2 class="section-title reveal">About <span>Me</span></h2>
+      <div class="about-grid">
+        <div class="about-image reveal-left">
+          <div class="image-wrapper">
+            <img src="./myprofile.jpg" alt="About Me">
+            <div class="floating-badge">
+              <i class="fa-solid fa-code"></i>
+              <span>Developer</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-text reveal-right">
+          <h3>Passionate Web Developer & Designer</h3>
+          <p>
+            I'm a creative developer with 5+ years of experience building modern, 
+            responsive web applications. I love turning complex problems into simple, 
+            beautiful, and intuitive designs.
+          </p>
+          <div class="about-stats">
+            <div class="stat">
+              <span class="number" data-target="50">0</span>+
+              <span class="label">Projects</span>
+            </div>
+            <div class="stat">
+              <span class="number" data-target="5">0</span>+
+              <span class="label">Years Exp.</span>
+            </div>
+            <div class="stat">
+              <span class="number" data-target="30">0</span>+
+              <span class="label">Clients</span>
+            </div>
+          </div>
+          <a href="#" class="btn primary-btn"><i class="fa-solid fa-download"></i> Download CV</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== SKILLS ====== -->
+  <section class="skills section" id="skills">
+    <div class="container">
+      <h2 class="section-title reveal">My <span>Skills</span></h2>
+      <div class="skills-grid">
+        <div class="skill-card reveal-up">
+          <div class="skill-icon"><i class="fa-brands fa-html5"></i></div>
+          <h4>HTML5</h4>
+          <div class="progress-bar"><div class="progress" data-width="95%"></div></div>
+          <span class="percent">95%</span>
+        </div>
+        <div class="skill-card reveal-up delay-1">
+          <div class="skill-icon"><i class="fa-brands fa-css3-alt"></i></div>
+          <h4>CSS3</h4>
+          <div class="progress-bar"><div class="progress" data-width="90%"></div></div>
+          <span class="percent">90%</span>
+        </div>
+        <div class="skill-card reveal-up delay-2">
+          <div class="skill-icon"><i class="fa-brands fa-js"></i></div>
+          <h4>JavaScript</h4>
+          <div class="progress-bar"><div class="progress" data-width="85%"></div></div>
+          <span class="percent">85%</span>
+        </div>
+        <div class="skill-card reveal-up delay-3">
+          <div class="skill-icon"><i class="fa-brands fa-react"></i></div>
+          <h4>React</h4>
+          <div class="progress-bar"><div class="progress" data-width="80%"></div></div>
+          <span class="percent">80%</span>
+        </div>
+        <div class="skill-card reveal-up delay-4">
+          <div class="skill-icon"><i class="fa-brands fa-node-js"></i></div>
+          <h4>Node.js</h4>
+          <div class="progress-bar"><div class="progress" data-width="75%"></div></div>
+          <span class="percent">75%</span>
+        </div>
+        <div class="skill-card reveal-up delay-5">
+          <div class="skill-icon"><i class="fa-brands fa-git-alt"></i></div>
+          <h4>Git</h4>
+          <div class="progress-bar"><div class="progress" data-width="88%"></div></div>
+          <span class="percent">88%</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== PROJECTS ====== -->
+  <section class="projects section" id="projects">
+    <div class="container">
+      <h2 class="section-title reveal">Featured <span>Projects</span></h2>
+      <div class="projects-grid">
+        <!-- Project 1 -->
+        <div class="project-card reveal-up">
+          <div class="project-image">
+            <div class="overlay">
+              <a href="#" class="project-link"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              <a href="#" class="project-link"><i class="fa-brands fa-github"></i></a>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>E-Commerce Platform</h3>
+            <p>Full-stack shopping platform with React, Node.js & Stripe integration.</p>
+            <div class="tags">
+              <span>React</span><span>Node.js</span><span>MongoDB</span>
+            </div>
+          </div>
+        </div>
+        <!-- Project 2 -->
+        <div class="project-card reveal-up delay-1">
+          <div class="project-image" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+            <div class="overlay">
+              <a href="#" class="project-link"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              <a href="#" class="project-link"><i class="fa-brands fa-github"></i></a>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>Weather Dashboard</h3>
+            <p>Real-time weather app with geolocation and 7-day forecasting.</p>
+            <div class="tags">
+              <span>JavaScript</span><span>API</span><span>CSS</span>
+            </div>
+          </div>
+        </div>
+        <!-- Project 3 -->
+        <div class="project-card reveal-up delay-2">
+          <div class="project-image" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+            <div class="overlay">
+              <a href="#" class="project-link"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              <a href="#" class="project-link"><i class="fa-brands fa-github"></i></a>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>Task Manager App</h3>
+            <p>Kanban-style project management tool with drag & drop.</p>
+            <div class="tags">
+              <span>React</span><span>Django</span><span>PostgreSQL</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== FOOTER ====== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="social-links">
+        <a href="#"><i class="fa-brands fa-github"></i></a>
+        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#"><i class="fa-solid fa-envelope"></i></a>
+      </div>
+      <p>&copy; 2026 John Doe. Crafted with <i class="fa-solid fa-heart"></i> and code.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
